@@ -1,0 +1,41 @@
+<div class="home">
+  <div class="col-md-1 icoSec">
+      <span class="fa fa-graduation-cap"></span>
+  </div>
+  <div class="col-md-11 detSec">
+    <h2>Qualification</h2>
+    <div class="weWraper" id="myScroll">
+     <div class="expDet">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Education</th>
+            <th>Board / University</th>
+            <th>Year</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let edu of myQualify">
+            <td>{{ edu.education }}</td>
+            <td>{{ edu.board }}</td>
+            <td>{{ edu.year }}</td>
+            <td>{{ edu.grade }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="expDet">
+      <p class="posName">Web / Graphic Designer<span class="compName">@Webtech Academy/Infinitech Institute</span>
+      <span class="locName">Mumbai</span></p>
+      <p class="workTen">6 Months</p>
+      <p class="jobRole">Professional Course:-</p>
+      <div class="jdList">
+        <ul>
+          <li *ngFor="let task of course">{{ task.descript }}</li>
+        </ul>
+      </div>
+    </div>  
+   </div>
+  </div>
+</div>

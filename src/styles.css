@@ -1,0 +1,438 @@
+/* Master Styles */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+  margin: 0;
+  padding: 0;
+}
+body, input[text], button {
+  color: #888;
+  font-family: Cambria, Georgia;
+}
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+/* Navigation link styles */
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.lhs-wrap{
+    border:1px solid #ddd;
+    padding:10px;
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.2);
+    margin-right:10px;
+    float:left;
+    /*width: 100%;*/
+    position: fixed;
+    width: 25%;
+    background: rgb(63, 63, 63);
+}
+.contentWrap{
+   border:1px solid #ddd;
+   float:left;
+   box-shadow: 2px 3px 3px rgba(0,0,0,0.2);
+   padding:10px;
+   width: 100%
+}
+.myDp{text-align: center}
+.myDp img{
+  width: 230px;
+  height: 230px;
+  border:10px solid #aeaeae;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.myName{
+    font-weight: 600;
+    font-style: italic;
+    color: #9d9d9d;
+    margin-bottom: 0;
+}
+.myMantra{
+  font-style: italic;
+  font-size: 12px;
+  color: #ddd;
+}
+.detList{
+  padding: 0;
+  margin: 0;
+}
+.detList li{
+  display: block;
+  line-height: 34px;
+}
+.detList li .fa, .mySkill .fa{
+  color: #019fb6!important;
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  margin-right: 15px;
+  font-size: 17px;
+}
+.myDetail{
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 15px;
+}
+.fa-large{
+  font-size: 26px!important;
+  vertical-align: middle;
+}
+.progress{
+   border-radius:16px;
+   height: 17px;
+   margin-bottom: 16px;
+}
+.progress-bar{
+  background-color: #019fb6!important;
+  border-radius:16px;
+  font-size: 12px;
+  line-height: 18px;
+  height: 17px;
+}
+.mySkill{
+  padding: 20px 15px;
+  border-bottom: 1px solid #ddd;
+}
+.skilLable{
+  font-size: 17px;
+    font-weight: 600;
+}
+.skilHead{
+  margin-bottom: 15px;
+}
+.mySkill p{
+  margin-bottom: 5px;
+}
+.infoOverflow{
+    overflow-y: scroll;
+    height: 354px;
+    /*padding-right: 10px;*/
+    margin-top: 15px;
+}
+
+
+#myScroll::-webkit-scrollbar-track
+{
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+	/*background-color: #F5F5F5;*/
+}
+
+#myScroll::-webkit-scrollbar
+{
+	width: 6px;
+	/*background-color: #F5F5F5;*/
+  background-color: transparent;
+}
+
+#myScroll::-webkit-scrollbar-thumb
+{
+	/*background-color: #aeaeae;*/
+  background-color: transparent;
+}
+
+.mydpFix{
+      position: fixed;
+    left: 50px;
+    top: 10px;
+}
+.pad-left-zero{padding-left:0}
+.mynavUl{
+  padding:0px;
+  border:1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.mynavUl li{
+  display: inline-block;
+  list-style: none;
+  padding: 15px 20px 13px 20px;
+}
+.mynavUl li a{
+  font-weight: 600;
+  text-decoration: none;
+  color: #565656;
+  transition: all 0.5s ease-in-out;
+}
+.mynavUl li a:hover, .mynavUl li a:focus{
+  color:#019fb6;
+}
+/*.mynavUl li:hover .fa{
+   color:#019fb6;
+   transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+}*/
+.mynavUl li a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px #019fb6;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.mynavUl .fa{
+  margin-right: 8px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.mynavUl li a:hover:after { transform: scaleX(1); }
+/*.mynavUl li a:after{ transform-origin:100% 50%; }
+.mynavUl li a:after{  transform-origin:  0% 50%; }*/
+
+/*-------------------------Home Component-------------------*/
+
+.home{
+  font-size: 30px;
+    border: 1px solid #ddd;
+    padding: 25px 30px;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+}
+.icoSec .fa{
+  font-size: 45px;
+  vertical-align: middle;
+  color: #019fb6;
+}
+.detSec h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.expDet:first-child{margin-top: 0px}
+.expDet{margin-top: 20px;}
+.posName{
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+.posName .compName{
+    margin-left: 5px;
+    font-size: 16px;
+    color: #888;
+    font-weight: 400;
+}
+.workTen{
+  font-size: 14px;
+  font-weight: 600;
+  color: #019fb6;
+}
+.locName{
+  font-size: 14px;
+  float: right;
+  color: #9d9d9d;
+  padding-top: 5px;
+}
+.jobRole{
+      font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.jdList ul{
+  padding-left: 17px;
+  font-size: 14px;
+}
+.weWraper{
+  height: 459px;
+    float: left;
+    overflow-y: scroll;
+    width: 100%;
+}
+.expDet table{font-size: 14px;}
+.expDet table thead{background: #f5f5f5;}
+.navCont{
+  font-size: 14px;
+  font-weight: 600;
+}
+.myInfo ul{
+  width: 50%;
+  float: left;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+}
+.myInfo ul li p {
+    display: inline-block;
+    color: #35373e;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-right: 4px;
+}
+.abtMe .expDet{margin: 0}
+.myDp img:hover{
+  border-radius: 0;
+  transition: all 0.5s ease-in-out;
+}
+.myDp:hover .myMantra{
+  color: #565656;
+  transition: all 0.5s ease-in-out;
+}
+.myDesc p{
+  font-size: 14px;
+  text-align: justify;
+}
+.myDesc{float:left}
+.myDesc p span{
+  font-size: 20px;
+  font-weight: 600;
+  color: #019fb6;
+}
+.myInterest{
+  float: left;
+  margin-top: 20px;
+}
+.myInterest ul{
+  padding: 0;
+  list-style: none;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.myInterest ul li{
+  display: inline-block;
+  padding: 10px 47px;
+}
+.myInterest p{
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}
+.myInterest ul li span{
+  transition: all 0.4s ease-in-out;
+}
+.myInterest ul li span:hover{
+  transform: scale(1.5);
+  color:#019fb6!important;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer
+}
+.nav-port{
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  float: left;
+  width: 100%;
+}
+.nav-port li:first-child{margin-left: 0}
+.nav-port li{
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition:all 0.5s ease-in-out;
+    /*background: #ddd;*/
+    border:2px solid #019fb6;
+
+}
+.nav-port li:hover{
+  transition:all 0.5s ease-in-out;
+  box-shadow: 0 0 0 3px #019fb6;
+  border:2px solid #fff!important;
+  background-color: #019fb6;
+  color:#fff!important;
+}
+.portContainer{
+  padding:15px;
+  margin-top: 30px;
+  border:1px solid #ddd;
+  float: left;
+  width: 100%;
+  height: 375px;
+}
+.portContainer img{
+  width: 100%;
+  height: 140px;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer
+}
+.overlayPort{
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background-color: rgba(0,0,0,0.2);
+  width: 88%;
+  height: 140px;
+}
+.homeNg{
+  background-image: url("http://www.inbounddigital.com.au/wp-content/uploads/2016/02/Website-Design-Background_Torquay.png");
+  background-size: cover;
+  background-position: center;
+  height: 568px;
+}
+.homeNg h2{color: #fff}
+.expDet h1.introLab{
+  font-weight: 600;
+    font-size: 65px;
+    color: #fff;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    width: 65%;
+    margin: 15px auto;
+}
+.expDet p.introName{
+  font-size: 24px;
+    text-align: center;
+    color: #019fb6;
+    font-style: italic;
+}
+.homeNg .expDet{
+  padding: 160px 0;
+}

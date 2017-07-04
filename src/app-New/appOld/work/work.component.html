@@ -1,0 +1,43 @@
+<div class="home">
+  <div class="col-md-1 icoSec">
+      <span class="fa fa-briefcase"></span>
+  </div>
+  <div class="col-md-11 detSec">
+    <h2>Work Experience</h2>
+    <div class="weWraper" id="myScroll">
+    <div class="expDet">
+      <p class="posName">Graphic Designer<span class="compName">@Kabra Travel Services Pvt. Ltd.</span>
+      <span class="locName">Mumbai(Malad)</span></p>
+      <p class="workTen">Jan 2013 - May 2014</p>
+      <p class="jobRole">Roles & Responsibilities:-</p>
+      <div class="jdList">
+        <ul>
+          <li *ngFor="let kts of ktsComp">{{ kts.ktsjob }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="expDet">
+      <p class="posName">Graphic Designer<span class="compName">@Locon Solutions Pvt. Ltd.(Housing.com)</span>
+      <span class="locName">Navi Mumbai(Airoli)</span></p>
+      <p class="workTen">Jun 2014 - May 2016</p>
+      <p class="jobRole">Roles & Responsibilities:-</p>
+      <div class="jdList">
+        <ul>
+          <li *ngFor="let lsp of lspComp">{{ lsp.lspjob }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="expDet">
+      <p class="posName">Web / Graphic Designer<span class="compName">@Axat Technologies Pvt. Ltd.</span>
+      <span class="locName">Navi Mumbai(Ghansoli)</span></p>
+      <p class="workTen">Jun 2016 - Present</p>
+      <p class="jobRole">Roles & Responsibilities:-</p>
+      <div class="jdList">
+        <ul>
+          <li *ngFor="let axat of axatComp">{{ axat.axatjob }}</li>
+        </ul>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>

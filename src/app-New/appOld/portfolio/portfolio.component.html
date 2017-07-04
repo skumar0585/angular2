@@ -1,0 +1,87 @@
+<div class="home">
+  <div class="col-md-1 icoSec">
+      <span class="fa fa-image"></span>
+  </div>
+  <div class="col-md-11 detSec">
+    <h2>Portfolio</h2>
+    <div class="expDet">
+      <div class="navCont">
+      <ul class="nav-port">
+        <li (click)="showHideWeb()">Website</li>
+        <li (click)="showHidePsd()">PSD Template</li>
+        <li (click)="showHideCreate()">Creative</li>
+        <li (click)="showHideGraph()">Graphics</li>
+      </ul>
+       <div *ngIf="isWebsite" class="portContainer">
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+       </div>
+       <div *ngIf="isPsd" class="portContainer">
+        <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+       </div>
+       <div *ngIf="isCreate" class="portContainer">
+       <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+       </div>
+       <div *ngIf="isGraph" class="portContainer">
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+          <div class="col-md-4">
+            <span class="overlayPort"></span>
+            <img src="" alt="">
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
